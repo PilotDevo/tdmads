@@ -5,7 +5,7 @@ from pathlib import Path
 
 import environ
 
-ROOT_DIR = Path(__file__).resolve(strict=False).parent.parent.parent
+ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # tdmads/
 APPS_DIR = ROOT_DIR / "tdmads"
 env = environ.Env()
@@ -18,7 +18,7 @@ if READ_DOT_ENV_FILE:
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
-DEBUG = env.bool("DJANGO_DEBUG", True)
+DEBUG = env.bool("DJANGO_DEBUG", False)
 # Local time zone. Choices are
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # though not all of them may be available with every OS.
