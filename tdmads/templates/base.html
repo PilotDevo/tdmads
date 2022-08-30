@@ -10,9 +10,6 @@
     <meta name="author" content="Devin O'Loughlin">
 
     <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
-      <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
     {% block css %}
@@ -124,22 +121,22 @@
 
 
     <!-- Main jQuery -->
-    <script src="plugins/jquery/jquery.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="{% static 'plugins/jquery/jquery.js' %}"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
    <!--  Magnific Popup-->
-    <script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="{% static 'plugins/magnific-popup/dist/jquery.magnific-popup.min.js' %}"></script>
     <!-- Slick Slider -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="{% static 'plugins/slick-carousel/slick/slick.min.js' %}"></script>
     <!-- Counterup -->
-    <script src="plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="plugins/counterup/jquery.counterup.min.js"></script>
+    <script src="{% static 'plugins/counterup/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'plugins/counterup/jquery.counterup.min.js' %}"></script>
 
-     <script src="plugins/modal-video/modal-video.js"></script>
+     <script src="{% static 'plugins/modal-video/modal-video.js' %}"></script>
     <!-- Google Map -->
-    <script src="plugins/google-map/map.js"></script>
+    <script src="{% static 'plugins/google-map/map.js' %}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
 
-    <script src="js/script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
     {% comment %}
     Script tags with only code, no src (defer by default). To run
     with a "defer" so that you run inline code:
