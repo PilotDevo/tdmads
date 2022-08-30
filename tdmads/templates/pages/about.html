@@ -1,1 +1,139 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="page-title bg-1">
+    <div class="container">
+       <div class="columns">
+          <div class="column is-12">
+             <div class="block has-text-centered">
+                <span class="text-white">About Us</span>
+                <h1 class="is-capitalize text-lg">Our Company</h1>
+
+                <ul class="list-inline breadcumb-nav">
+                   <li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+                   <li class="list-inline-item"><span class="text-white">/</span></li>
+                   <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
+                </ul>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+ <section class="section ">
+     <div class="container">
+         <div class="columns is-desktop is-justify-content-center">
+             <div class="column is-10-desktop">
+                 <div class="heading has-text-centered">
+                     <h2>We help Companies <br><span class="text-color">Turn ideas into</span> Experiences</h2>
+                 </div>
+             </div>
+         </div>
+         <div class="columns is-multiline is-justify-content-center">
+             <div class="column is-4-widescreen is-4-desktop is-6-tablet">
+                 <div class="counter-item counter--style has-text-centered mb-5 mb-lg-0">
+                     <i class="ti-thumb-up"></i>
+                     <h2 class="mb-0 mt-3"><span class="counter-stat font-weight-bold">1730</span> +</h2>
+                     <p>Projects Completed</p>
+                 </div>
+             </div>
+             <div class="column is-4-widescreen is-4-desktop is-6-tablet">
+                 <div class="counter-item counter--style has-text-centered mb-5 mb-lg-0">
+                     <i class="ti-face-smile"></i>
+                     <h2 class="mb-0 mt-3"><span class="counter-stat font-weight-bold">125 </span>M </h2>
+                     <p>In Seed Funding</p>
+                 </div>
+             </div>
+             <div class="column is-4-widescreen is-4-desktop is-6-tablet">
+                 <div class="counter-item counter--style has-text-centered">
+                     <i class="ti-cup"></i>
+                     <h2 class="mb-0 mt-3"><span class="counter-stat font-weight-bold">14</span></h2>
+                     <p>Awards Granted</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <section class="video-block section bg-light">
+     <div class="container">
+         <div class="columns is-desktop is-align-items-center">
+             <div class="column is-6-desktop">
+                 <div class="feature-list">
+                     <h2 class="mb-5">Digital Marketing and Business Solutions</h2>
+                     <p>Since our founders met in college they have been helping businesses meet their goals. <br> Our customers Commonly enjoy these benefits while working with us:</p>
+
+                     <ul class="list-unstyled mt-5 mb-6">
+                         <li><i class="ti-check mr-4"></i>Projects completed on time.</li>
+                         <li><i class="ti-check mr-4"></i>Custom designs for your exact needs.</li>
+                         <li><i class="ti-check mr-4"></i>Full functionality from day one.</li>
+                     </ul>
+
+                     <a href="/" class="btn btn-main">Our Services<i class="fa fa-angle-right ml-3"></i></a>
+                 </div>
+             </div>
+
+             <div class="column is-6-desktop">
+                 <div class="video-img">
+                     <img src="{% static 'images/about/img-34.jpg' %}" alt="" class="w-100">
+                     <a data-video-id="sXoKSD8QJEA" class="video-play"><i class="ti-control-play"></i></a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <section class="section team">
+     <div class="container">
+         <div class="columns is-desktop is-justify-content-center">
+             <div class="column is-6-desktop">
+                 <div class="heading has-text-centered mb-50">
+                     <h2 class="mb-5">Our Team</h2>
+                     <p>With many years of combined expertise<br> Our Team is ready to meet your Needs</p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="columns is-multiline is-justify-content-center">
+             <div class="column is-3-desktop is-6-tablet">
+                 <div class="team-block mb-5 mb-lg-0">
+                     <img src="{% static 'images/team/03-1.jpg' %}" alt="" class="w-100">
+
+                     <h4 class="mt-4 mb-0">Devin O'Loughlin</h4>
+                     <p>Founder</p>
+                 </div>
+             </div>
+
+             <div class="column is-3-desktop is-6-tablet">
+                 <div class="team-block mb-5 mb-lg-0">
+                     <img src="{% static 'images/team/01-3.jpg' %}" alt="" class="w-100">
+
+                     <h4 class="mt-4 mb-0">Tigran Danilian</h4>
+                     <p>Founder</p>
+                 </div>
+             </div>
+
+             {% comment %} <div class="column is-3-desktop is-6-tablet">
+                 <div class="team-block mb-5 mb-lg-0">
+                     <img src="images/team/03-1.jpg" alt="" class="w-100">
+
+                     <h4 class="mt-4 mb-0">?</h4>
+                     <p>position?</p>
+                 </div>
+             </div>
+             <div class="column is-3-desktop is-6-tablet">
+                 <div class="team-block">
+                     <img src="images/team/01-3.jpg" alt="" class="w-100">
+
+                     <h4 class="mt-4 mb-0">?</h4>
+                     <p>Position?</p>
+                 </div>
+             </div> {% endcomment %}
+         </div>
+     </div>
+ </section>
+
+
+ {% include 'partials/footer.html' %}
+{% endblock %}
