@@ -1,5 +1,4 @@
 import logging
-import os
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
@@ -157,7 +156,3 @@ sentry_sdk.init(
 
 # Your stuff...
 # ------------------------------------------------------------------------------
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATIC_URL = "/static/"
