@@ -4,54 +4,7 @@
 
 {% block content %}
 <!-- navigation -->
-<div id="navbar" class="navigation py-4">
-	<div class="container">
-		 <nav class="navbar">
-			 <div class="navbar-brand">
-				 <a class="navbar-item" href="#">
-					 <img src="{% static 'images/logo.png' %}" alt="logo">
-				 </a>
-				 <button role="button" class="navbar-burger burger" data-hidden="true" data-target="navigation">
-					 <span aria-hidden="true"></span>
-					 <span aria-hidden="true"></span>
-					 <span aria-hidden="true"></span>
-				 </button>
-			 </div>
-
-			 <div class="navbar-menu" id="navigation">
-				 <ul class="navbar-start ml-auto">
-					 <li class="navbar-item">
-						 <a class="navbar-link" href="">Home</a>
-					 </li>
-
-					 <li class="navbar-item">
-						 <a class="navbar-link" href="about/">About</a>
-					 </li>
-
-					 <li class="navbar-item">
-						 <a class="navbar-link" href="">Portfolio</a>
-					 </li>
-
-					 <li class="navbar-item has-dropdown">
-						 <a class="navbar-link">Pages</a>
-						 <div class="navbar-dropdown">
-							 <a class="navbar-item" href="">Service</a>
-						 </div>
-					 </li>
-
-					 <li class="navbar-item">
-						 <a class="navbar-link" href="">Contact</a>
-					 </li>
-				 </ul>
-				 <ul class="navbar-end ml-0">
-					 <li class="navbar-item">
-						<a href="" class="btn btn-solid-border">Get an estimate <i class="fa fa-angle-right ml-2"></i></a>
-					 </li>
-				 </ul>
-			 </div>
-		 </nav>
-	</div>
- </div>
+{% include 'partials/nav1.html' %}
  <!-- Slider Start -->
 <section class="banner is-flex is-align-items-center">
 	<div class="banner-img-part"></div>
