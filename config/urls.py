@@ -16,6 +16,7 @@ urlpatterns = [
     path("users/", include("tdmads.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path("portfolio/", include("tdmads.portfolio.urls", namespace="portfolio")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
